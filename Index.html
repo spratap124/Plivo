@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plivo |  Pricing Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" /> 
+</head>
+<body>
+	<div class="outerContainer"> 
+		<div class="heading">
+			<h1>Pricing Calculator</h1>
+		</div>
+		<div class="container">
+		<form>
+			<div class="inputWrapper">
+				<select name="country" class="country" id="country">
+					<option value="select your country">Select your country</option>				
+					<option value="USA">USA</option>				
+					<option value="UK">UK</option>				
+					<option value="INDIA">India</option>				
+				</select>
+				<div class="inputContainer">
+					<span class="currency">123</span><input type="text" id="usage" placeholder="Input your SMS usage per month" />
+				</div>
+				<div class="btn btnPressed" onclick="calculate();">Calculate</div>
+			</div>
+			
+			<table class="tbl">
+				<th class="tblHeading">Monthly spend using Plivo</th>
+				<th class="tblHeading">Monthly spend using Twilio</th>
+				<th class="tblHeading">Annual Savings with Plivo</th>
+				<tr class="row">
+					<td class="cell" id="plivo"> </td>
+					<td class="cell" id="twilio"> </td>
+					<td class="cell" id="savings"> </td>
+				</tr>
+				<tr class="row">
+					<td class="cell"></td>
+					<td class="cell"></td>
+					<td class="cell"></td>
+				</tr>
+				<tr class="row">
+					<td class="cell" ></td>
+					<td class="cell"></td>
+					<td class="cell"></td>
+				</tr> 
+			</table>
+			<div class="resetBox" onclick="resetFields();"><input type="reset" class="btn reset btnPressed" value="Reset" /></div>
+			</form>
+			<p id="error">SMS usage can only be of number type! Please try again.</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/calculator.js"></script>
+</body>
+</html>
