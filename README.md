@@ -1,1 +1,1 @@
-Download the file "Steps to use the app.pdf".
+Download the file "Steps to use the app.pdf" for the instructions.
